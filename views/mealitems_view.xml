@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mealitem_tree" model="ir.ui.view">
+        <field name="name">mealitem.template.tree</field>
+        <field name="model">mealitem.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="meal_id"/>
+                <field name="item_id"/>
+                <field name="calories"/>
+                <field name="servings"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_mealitem_form" model="ir.ui.view">
+        <field name="name">mealitem.template.form</field>
+        <field name="model">mealitem.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="meal_id"/>
+                        <field name="item_id"/>
+                        <field name="calories" readonly="1"/>
+                        <field name="servings"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mealitem_template" model="ir.actions.act_window">
+        <field name="name">Meal Items</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mealitem.template</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

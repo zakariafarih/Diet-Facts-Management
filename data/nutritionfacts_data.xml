@@ -1,0 +1,1026 @@
+<odoo>
+    <!-- Sample for Paella (8 facts) -->
+    <record id="fact_paella_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">6.5</field>
+        <field name="dailypercent">13</field>
+    </record>
+    <record id="fact_paella_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">13</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_paella_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">5</field>
+        <field name="dailypercent">25</field>
+    </record>
+    <record id="fact_paella_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">0.12</field>
+        <field name="dailypercent">40</field>
+    </record>
+    <record id="fact_paella_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">40</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_paella_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_paella_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_paella_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_paella"/>
+        <field name="value">1.4</field>
+        <field name="dailypercent">23</field>
+    </record>
+
+    <!-- Sample for Arroz Negro (8 facts) -->
+    <record id="fact_arroz_nero_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">7.0</field>
+        <field name="dailypercent">14</field>
+    </record>
+    <record id="fact_arroz_nero_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">12</field>
+        <field name="dailypercent">18</field>
+    </record>
+    <record id="fact_arroz_nero_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">4.0</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_arroz_nero_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">0.10</field>
+        <field name="dailypercent">33</field>
+    </record>
+    <record id="fact_arroz_nero_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">45</field>
+        <field name="dailypercent">16</field>
+    </record>
+    <record id="fact_arroz_nero_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_arroz_nero_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">2.0</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_arroz_nero_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">20</field>
+    </record>
+
+    <!-- Sample for Gazpacho (8 facts) -->
+    <record id="fact_gazpacho_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_gazpacho_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">3</field>
+        <field name="dailypercent">5</field>
+    </record>
+    <record id="fact_gazpacho_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">0.4</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_gazpacho_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">0.0</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_gazpacho_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">4</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_gazpacho_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">3</field>
+        <field name="dailypercent">3</field>
+    </record>
+    <record id="fact_gazpacho_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">1.0</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_gazpacho_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="value">0.7</field>
+        <field name="dailypercent">12</field>
+    </record>
+
+    <record id="fact_tortilla_espanola_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">7</field>
+        <field name="dailypercent">14</field>
+    </record>
+    <record id="fact_tortilla_espanola_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">10</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_tortilla_espanola_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">2</field>
+        <field name="dailypercent">10</field>
+    </record>
+    <record id="fact_tortilla_espanola_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">0.05</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_tortilla_espanola_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">20</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_tortilla_espanola_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_tortilla_espanola_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_tortilla_espanola_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="value">1.0</field>
+        <field name="dailypercent">17</field>
+    </record>
+
+    <record id="fact_jamon_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">27</field>
+        <field name="dailypercent">54</field>
+    </record>
+    <record id="fact_jamon_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">20</field>
+        <field name="dailypercent">30</field>
+    </record>
+    <record id="fact_jamon_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_jamon_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">0.12</field>
+        <field name="dailypercent">40</field>
+    </record>
+    <record id="fact_jamon_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">1</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_jamon_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">0.1</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_jamon_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">0.0</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_jamon_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="value">2.3</field>
+        <field name="dailypercent">38</field>
+    </record>
+
+    <record id="fact_chorizo_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">16</field>
+        <field name="dailypercent">32</field>
+    </record>
+    <record id="fact_chorizo_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">35</field>
+        <field name="dailypercent">50</field>
+    </record>
+    <record id="fact_chorizo_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">6</field>
+        <field name="dailypercent">30</field>
+    </record>
+    <record id="fact_chorizo_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">0.20</field>
+        <field name="dailypercent">66</field>
+    </record>
+    <record id="fact_chorizo_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">2</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_chorizo_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">1</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_chorizo_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">0.5</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_chorizo_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="value">1.8</field>
+        <field name="dailypercent">30</field>
+    </record>
+
+        <!-- ============================== -->
+    <!-- 7) PATATAS BRAVAS -->
+    <!-- ============================== -->
+    <record id="fact_patatas_bravas_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">3</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_patatas_bravas_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">9</field>
+        <field name="dailypercent">14</field>
+    </record>
+    <record id="fact_patatas_bravas_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_patatas_bravas_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">0.0</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_patatas_bravas_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">25</field>
+        <field name="dailypercent">9</field>
+    </record>
+    <record id="fact_patatas_bravas_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_patatas_bravas_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">2.5</field>
+        <field name="dailypercent">10</field>
+    </record>
+    <record id="fact_patatas_bravas_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">20</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 8) ENSALADILLA RUSA -->
+    <!-- ============================== -->
+    <record id="fact_ensaladilla_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">4</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_ensaladilla_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">8</field>
+        <field name="dailypercent">12</field>
+    </record>
+    <record id="fact_ensaladilla_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">7</field>
+    </record>
+    <record id="fact_ensaladilla_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">0.02</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_ensaladilla_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">18</field>
+        <field name="dailypercent">7</field>
+    </record>
+    <record id="fact_ensaladilla_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_ensaladilla_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">1.8</field>
+        <field name="dailypercent">7</field>
+    </record>
+    <record id="fact_ensaladilla_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="value">1.0</field>
+        <field name="dailypercent">16</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 9) CROQUETAS -->
+    <!-- ============================== -->
+    <record id="fact_croquetas_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">8</field>
+        <field name="dailypercent">16</field>
+    </record>
+    <record id="fact_croquetas_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">15</field>
+        <field name="dailypercent">22</field>
+    </record>
+    <record id="fact_croquetas_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_croquetas_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">0.06</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_croquetas_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">18</field>
+        <field name="dailypercent">7</field>
+    </record>
+    <record id="fact_croquetas_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_croquetas_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">5</field>
+    </record>
+    <record id="fact_croquetas_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="value">1.1</field>
+        <field name="dailypercent">18</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 10) SALMOREJO -->
+    <!-- ============================== -->
+    <record id="fact_salmorejo_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">2</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_salmorejo_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">4</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_salmorejo_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">1</field>
+        <field name="dailypercent">5</field>
+    </record>
+    <record id="fact_salmorejo_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">0.02</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_salmorejo_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">16</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_salmorejo_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_salmorejo_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">1.0</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_salmorejo_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="value">0.8</field>
+        <field name="dailypercent">14</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 11) BOCADILLO DE CALAMARES -->
+    <!-- ============================== -->
+    <record id="fact_bocadillo_calamares_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">15</field>
+        <field name="dailypercent">30</field>
+    </record>
+    <record id="fact_bocadillo_calamares_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">12</field>
+        <field name="dailypercent">18</field>
+    </record>
+    <record id="fact_bocadillo_calamares_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">2.5</field>
+        <field name="dailypercent">12</field>
+    </record>
+    <record id="fact_bocadillo_calamares_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">0.07</field>
+        <field name="dailypercent">23</field>
+    </record>
+    <record id="fact_bocadillo_calamares_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">35</field>
+        <field name="dailypercent">12</field>
+    </record>
+    <record id="fact_bocadillo_calamares_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">4</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_bocadillo_calamares_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">2</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_bocadillo_calamares_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="value">1.3</field>
+        <field name="dailypercent">22</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 12) EMPANADA -->
+    <!-- ============================== -->
+    <record id="fact_empanada_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">7</field>
+        <field name="dailypercent">14</field>
+    </record>
+    <record id="fact_empanada_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">12</field>
+        <field name="dailypercent">18</field>
+    </record>
+    <record id="fact_empanada_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_empanada_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">0.04</field>
+        <field name="dailypercent">13</field>
+    </record>
+    <record id="fact_empanada_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">30</field>
+        <field name="dailypercent">11</field>
+    </record>
+    <record id="fact_empanada_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_empanada_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">6</field>
+    </record>
+    <record id="fact_empanada_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_empanada"/>
+        <field name="value">1.1</field>
+        <field name="dailypercent">18</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 13) COCIDO MADRILEÑO -->
+    <!-- ============================== -->
+    <record id="fact_cocido_madrileno_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">12</field>
+        <field name="dailypercent">24</field>
+    </record>
+    <record id="fact_cocido_madrileno_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">14</field>
+        <field name="dailypercent">21</field>
+    </record>
+    <record id="fact_cocido_madrileno_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">4</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_cocido_madrileno_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">0.10</field>
+        <field name="dailypercent">33</field>
+    </record>
+    <record id="fact_cocido_madrileno_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">25</field>
+        <field name="dailypercent">9</field>
+    </record>
+    <record id="fact_cocido_madrileno_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_cocido_madrileno_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">2</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_cocido_madrileno_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">25</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 14) FABADA -->
+    <!-- ============================== -->
+    <record id="fact_fabada_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">14</field>
+        <field name="dailypercent">28</field>
+    </record>
+    <record id="fact_fabada_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">15</field>
+        <field name="dailypercent">23</field>
+    </record>
+    <record id="fact_fabada_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">5</field>
+        <field name="dailypercent">25</field>
+    </record>
+    <record id="fact_fabada_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">0.10</field>
+        <field name="dailypercent">33</field>
+    </record>
+    <record id="fact_fabada_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">25</field>
+        <field name="dailypercent">9</field>
+    </record>
+    <record id="fact_fabada_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_fabada_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">3</field>
+        <field name="dailypercent">12</field>
+    </record>
+    <record id="fact_fabada_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_fabada"/>
+        <field name="value">1.8</field>
+        <field name="dailypercent">30</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 15) MIGAS -->
+    <!-- ============================== -->
+    <record id="fact_migas_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">10</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_migas_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">12</field>
+        <field name="dailypercent">18</field>
+    </record>
+    <record id="fact_migas_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_migas_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">0.08</field>
+        <field name="dailypercent">26</field>
+    </record>
+    <record id="fact_migas_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">40</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_migas_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_migas_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">2</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_migas_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_migas"/>
+        <field name="value">1.4</field>
+        <field name="dailypercent">23</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 16) PIMIENTOS DE PADRÓN -->
+    <!-- ============================== -->
+    <record id="fact_pimientos_padron_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">2</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_pimientos_padron_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">1</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_pimientos_padron_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">0.2</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_pimientos_padron_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">0.0</field>
+        <field name="dailypercent">0</field>
+    </record>
+    <record id="fact_pimientos_padron_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">5</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_pimientos_padron_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">2</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_pimientos_padron_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">1</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_pimientos_padron_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="value">0.8</field>
+        <field name="dailypercent">13</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 17) HUEVOS ROTOS -->
+    <!-- ============================== -->
+    <record id="fact_huevos_rotos_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">11</field>
+        <field name="dailypercent">22</field>
+    </record>
+    <record id="fact_huevos_rotos_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">14</field>
+        <field name="dailypercent">21</field>
+    </record>
+    <record id="fact_huevos_rotos_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">4</field>
+        <field name="dailypercent">20</field>
+    </record>
+    <record id="fact_huevos_rotos_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">0.25</field>
+        <field name="dailypercent">83</field>
+    </record>
+    <record id="fact_huevos_rotos_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">20</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_huevos_rotos_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_huevos_rotos_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">1</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_huevos_rotos_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="value">1.2</field>
+        <field name="dailypercent">20</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 18) BACALAO A LA VIZCAÍNA -->
+    <!-- ============================== -->
+    <record id="fact_bacalao_vizcaina_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">18</field>
+        <field name="dailypercent">36</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">5</field>
+        <field name="dailypercent">8</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">1</field>
+        <field name="dailypercent">5</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">0.08</field>
+        <field name="dailypercent">26</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">5</field>
+        <field name="dailypercent">2</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">1</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">0.8</field>
+        <field name="dailypercent">3</field>
+    </record>
+    <record id="fact_bacalao_vizcaina_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="value">1.5</field>
+        <field name="dailypercent">25</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 19) CALLOS -->
+    <!-- ============================== -->
+    <record id="fact_callos_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">9</field>
+        <field name="dailypercent">18</field>
+    </record>
+    <record id="fact_callos_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">10</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_callos_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_callos_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">0.07</field>
+        <field name="dailypercent">23</field>
+    </record>
+    <record id="fact_callos_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">10</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_callos_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">1</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_callos_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">1</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_callos_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_callos"/>
+        <field name="value">1.3</field>
+        <field name="dailypercent">22</field>
+    </record>
+
+    <!-- ============================== -->
+    <!-- 20) PESCADO FRITO -->
+    <!-- ============================== -->
+    <record id="fact_pescado_frito_protein" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_protein"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">16</field>
+        <field name="dailypercent">32</field>
+    </record>
+    <record id="fact_pescado_frito_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">10</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_pescado_frito_sat_fat" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sat_fat"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">3</field>
+        <field name="dailypercent">15</field>
+    </record>
+    <record id="fact_pescado_frito_cholesterol" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_cholesterol"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">0.08</field>
+        <field name="dailypercent">26</field>
+    </record>
+    <record id="fact_pescado_frito_carbs" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_carbs"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">14</field>
+        <field name="dailypercent">5</field>
+    </record>
+    <record id="fact_pescado_frito_sugar" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sugar"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">1</field>
+        <field name="dailypercent">1</field>
+    </record>
+    <record id="fact_pescado_frito_fiber" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_fiber"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">1</field>
+        <field name="dailypercent">4</field>
+    </record>
+    <record id="fact_pescado_frito_sodium" model="nutritionfact.template">
+        <field name="nutrient_id" ref="diet_facts_management.nutrient_sodium"/>
+        <field name="product_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="value">1.0</field>
+        <field name="dailypercent">16</field>
+    </record>
+</odoo>

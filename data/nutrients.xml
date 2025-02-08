@@ -1,0 +1,49 @@
+<odoo>
+    <record id="nutrient_protein" model="nutrient.template">
+        <field name="name">Protein</field>
+        <field name="description">Essential for muscle growth</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_fat" model="nutrient.template">
+        <field name="name">Fat</field>
+        <field name="description">Total fats (lipids)</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_sat_fat" model="nutrient.template">
+        <field name="name">Saturated Fat</field>
+        <field name="description">Saturated fatty acids</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_cholesterol" model="nutrient.template">
+        <field name="name">Cholesterol</field>
+        <field name="description">Cholesterol content</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_carbs" model="nutrient.template">
+        <field name="name">Carbohydrates</field>
+        <field name="description">Total carbs including starch</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_sugar" model="nutrient.template">
+        <field name="name">Sugar</field>
+        <field name="description">Sugars included in carbs</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_fiber" model="nutrient.template">
+        <field name="name">Fiber</field>
+        <field name="description">Dietary fiber</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+
+    <record id="nutrient_sodium" model="nutrient.template">
+        <field name="name">Sodium</field>
+        <field name="description">Sodium or salt content</field>
+        <field name="uom_id" ref="uom.product_uom_gram"/>
+    </record>
+</odoo>

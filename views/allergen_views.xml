@@ -1,0 +1,33 @@
+<odoo>
+    <record id="view_diet_allergen_tree" model="ir.ui.view">
+        <field name="name">diet.allergen.tree</field>
+        <field name="model">diet.allergen</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_diet_allergen_form" model="ir.ui.view">
+        <field name="name">diet.allergen.form</field>
+        <field name="model">diet.allergen</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_allergen" model="ir.actions.act_window">
+        <field name="name">Allergens</field>
+        <field name="res_model">diet.allergen</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

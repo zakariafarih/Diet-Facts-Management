@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_diet_management_root"
+              name="Diet Management"
+              parent="sale.sale_menu_root"
+              sequence="30"/>
+
+    <menuitem id="menu_meal_template"
+              name="Meals"
+              parent="menu_diet_management_root"
+              action="action_meal_template"
+              sequence="1"/>
+
+    <menuitem id="menu_nutrient_template"
+              name="Nutrients"
+              parent="menu_diet_management_root"
+              action="nutrient_template_action"
+              sequence="2"/>
+
+    <menuitem id="menu_nutritionfact_template"
+              name="Nutrition Facts"
+              parent="menu_diet_management_root"
+              action="diet_facts_management.action_nutritionfact_template"
+              sequence="3"/>
+
+    <menuitem id="menu_diet_product_template"
+              name="Diet Products"
+              parent="menu_diet_management_root"
+              action="action_diet_product_template"
+              sequence="4"/>
+    <menuitem id="menu_diet_enhancements_root"
+              name="Diet Enhancements"
+              parent="diet_facts_management.menu_diet_management_root"
+              sequence="100" />
+
+    <menuitem id="menu_dietary_goal"
+              name="Daily Goals"
+              parent="menu_diet_enhancements_root"
+              action="action_dietary_goal"
+              sequence="1" />
+
+    <menuitem id="menu_meal_schedule"
+              name="Meal Schedules"
+              parent="menu_diet_enhancements_root"
+              action="action_meal_schedule"
+              sequence="2" />
+
+    <menuitem id="menu_allergen"
+              name="Allergens"
+              parent="menu_diet_enhancements_root"
+              action="action_allergen"
+              sequence="3" />
+
+    <menuitem id="menu_water_intake"
+              name="Water Intake"
+              parent="menu_diet_enhancements_root"
+              action="action_water_intake"
+              sequence="4" />
+
+    <menuitem id="menu_user_badge"
+              name="User Badges"
+              parent="menu_diet_enhancements_root"
+              action="action_user_badge"
+              sequence="5" />
+</odoo>

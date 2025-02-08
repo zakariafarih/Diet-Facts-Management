@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- =====================================================
+       Daily Nutrient Goals Demo Data
+       ===================================================== -->
+  <record id="dietary_goal_admin" model="dietary.goal">
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="calorie_target">2000</field>
+    <field name="protein_target">75.0</field>
+    <field name="fat_target">70.0</field>
+    <field name="carbs_target">250.0</field>
+  </record>
+
+  <!-- =====================================================
+       Weekly Meal Schedule Demo Data
+       ===================================================== -->
+  <record id="meal_schedule_admin_weekly" model="meal.schedule">
+    <field name="name">Admin Weekly Meal Plan</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="start_date">2025-02-15</field>
+    <field name="end_date">2025-02-21</field>
+  </record>
+
+  <!-- =====================================================
+       Meals for the Meal Schedule
+       ===================================================== -->
+  <record id="meal_admin_breakfast_day1" model="meal.template">
+    <field name="name">Breakfast - Day 1</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">breakfast</field>
+    <field name="meal_date">2025-02-15</field>
+  </record>
+
+  <record id="meal_admin_lunch_day1" model="meal.template">
+    <field name="name">Lunch - Day 1</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">lunch</field>
+    <field name="meal_date">2025-02-15</field>
+  </record>
+
+  <record id="meal_admin_dinner_day1" model="meal.template">
+    <field name="name">Dinner - Day 1</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">dinner</field>
+    <field name="meal_date">2025-02-15</field>
+  </record>
+
+  <record id="meal_admin_breakfast_day2" model="meal.template">
+    <field name="name">Breakfast - Day 2</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">breakfast</field>
+    <field name="meal_date">2025-02-16</field>
+  </record>
+
+  <record id="meal_admin_lunch_day2" model="meal.template">
+    <field name="name">Lunch - Day 2</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">lunch</field>
+    <field name="meal_date">2025-02-16</field>
+  </record>
+
+  <record id="meal_admin_dinner_day2" model="meal.template">
+    <field name="name">Dinner - Day 2</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="meal_schedule_id" ref="meal_schedule_admin_weekly"/>
+    <field name="meal_type">dinner</field>
+    <field name="meal_date">2025-02-16</field>
+  </record>
+
+  <!-- =====================================================
+       Allergens Demo Data
+       ===================================================== -->
+  <record id="allergen_gluten" model="diet.allergen">
+    <field name="name">Gluten</field>
+    <field name="description">Contains gluten (wheat, barley, rye).</field>
+  </record>
+  <record id="allergen_nuts" model="diet.allergen">
+    <field name="name">Nuts</field>
+    <field name="description">Contains tree nuts and peanuts.</field>
+  </record>
+  <record id="allergen_dairy" model="diet.allergen">
+    <field name="name">Dairy</field>
+    <field name="description">Contains milk and other dairy products.</field>
+  </record>
+
+  <!-- =====================================================
+       Ensure Allergens Exist Before Linking to Partners
+       ===================================================== -->
+  <record id="res_partner_admin_inherited" model="res.partner">
+    <field name="name">Administrator</field>  <!-- Fix: Ensure name field is provided -->
+    <field name="allergen_ids" eval="[(6, 0, [ref('allergen_gluten'), ref('allergen_nuts')])]"/>
+  </record>
+
+  <!-- =====================================================
+       Water Intake Demo Data
+       ===================================================== -->
+  <record id="water_intake_admin_2025_02_15" model="water.intake">
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="date">2025-02-15</field>
+    <field name="intake_ml">1500</field>
+  </record>
+  <record id="water_intake_admin_2025_02_16" model="water.intake">
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="date">2025-02-16</field>
+    <field name="intake_ml">2000</field>
+  </record>
+  <record id="water_intake_admin_2025_02_17" model="water.intake">
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="date">2025-02-17</field>
+    <field name="intake_ml">2500</field>
+  </record>
+
+</odoo>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_tree_dietfacts" model="ir.ui.view">
+        <field name="name">product.template.tree.dietfacts</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="list_price" position="after">
+                <field name="calories"/>
+                <field name="nutri_score_letter" widget="char"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_product_template_form_dietfacts" model="ir.ui.view">
+    <field name="name">product.template.form.dietfacts</field>
+    <field name="model">product.template</field>
+    <field name="inherit_id" ref="product.product_template_only_form_view"/>
+    <field name="arch" type="xml">
+        <field name="invoice_policy" position="after">
+            <field name="servingsize"/>
+            <field name="calories"/>
+            <field name="nutritionscore" readonly="1"/>
+            <field name="nutri_score_letter" readonly="1"/>
+            <field name="is_nutrition_incomplete" readonly="1"/>
+        </field>
+
+        <page name="sales" position="after">
+            <page name="nutritionfacts" string="Nutrition Facts">
+                <field name="nutrition_ids">
+                    <tree editable="bottom">
+                        <field name="nutrient_id"/>
+                        <field name="value"/>
+                        <field name="uom"/>
+                        <field name="dailypercent"/>
+                    </tree>
+                    <form>
+                        <group>
+                            <field name="nutrient_id"/>
+                            <field name="value"/>
+                            <field name="uom"/>
+                            <field name="dailypercent"/>
+                        </group>
+                        <footer>
+                            <button name="action_print_report"
+                                    type="object"
+                                    string="Print Nutrition Report"
+                                    class="btn-primary oe_highlight"/>
+                        </footer>
+                    </form>
+                </field>
+            </page>
+        </page>
+    </field>
+</record>
+
+    <record id="action_diet_product_template" model="ir.actions.act_window">
+        <field name="name">Diet Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_id" ref="view_product_template_kanban_dietfacts"/>
+        <field name="domain">[("categ_id.name", "=", "Diet Items")]</field>
+    </record>
+</odoo>

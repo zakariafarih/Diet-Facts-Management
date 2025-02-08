@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_dietary_goal_tree" model="ir.ui.view">
+        <field name="name">dietary.goal.tree</field>
+        <field name="model">dietary.goal</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="user_id"/>
+                <field name="calorie_target"/>
+                <field name="protein_target"/>
+                <field name="fat_target"/>
+                <field name="carbs_target"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_dietary_goal_form" model="ir.ui.view">
+        <field name="name">dietary.goal.form</field>
+        <field name="model">dietary.goal</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="calorie_target"/>
+                        <field name="protein_target"/>
+                        <field name="fat_target"/>
+                        <field name="carbs_target"/>
+                    </group>
+                    <footer>
+                        <button string="Get Remaining Calories" type="object" name="get_remaining_calories" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dietary_goal" model="ir.actions.act_window">
+        <field name="name">Daily Nutrient Goals</field>
+        <field name="res_model">dietary.goal</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

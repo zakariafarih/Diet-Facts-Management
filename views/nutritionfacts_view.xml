@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_nutritionfact_form" model="ir.ui.view">
+        <field name="name">nutritionfact.template.form</field>
+        <field name="model">nutritionfact.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_print_report"
+                            string="Print Nutrition Facts"
+                            type="object"
+                            class="oe_highlight"
+                            invisible="not product_id"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="nutrient_id"/>
+                        <field name="value"/>
+                        <field name="uom"/>
+                        <field name="dailypercent"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_nutritionfact_tree" model="ir.ui.view">
+        <field name="name">nutritionfact.template.tree</field>
+        <field name="model">nutritionfact.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nutrient_id"/>
+                <field name="value"/>
+                <field name="uom"/>
+                <field name="dailypercent"/>
+                <field name="product_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_nutritionfact_template" model="ir.actions.act_window">
+        <field name="name">Nutrition Facts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">nutritionfact.template</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

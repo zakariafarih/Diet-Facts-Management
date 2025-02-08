@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_kanban_dietfacts" model="ir.ui.view">
+        <field name="name">product.template.kanban.dietfacts</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="categ_id">
+                <field name="name"/>
+                <field name="calories"/>
+                <field name="servingsize"/>
+                <field name="list_price"/>
+                <field name="nutri_score_letter"/>
+                <field name="is_nutrition_incomplete"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record">
+                            <strong>
+                                <t t-esc="record.name.value"/>
+                            </strong>
+                            <div>Price: €<t t-esc="record.list_price.value"/></div>
+                            <div>Calories/100g: <t t-esc="record.calories.value"/></div>
+                            <div>Nutri-Score: <t t-esc="record.nutri_score_letter.value"/></div>
+                            <div t-if="record.is_nutrition_incomplete.value" style="color:red;">
+                                Incomplete Nutrition!
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

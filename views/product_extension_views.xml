@@ -1,0 +1,33 @@
+<odoo>
+    <record id="view_product_template_form_inherit_diet_enh" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.diet.enh</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="replace">
+                <group>
+                    <field name="barcode"/>
+                    <button name="action_fetch_from_barcode" type="object" string="Fetch Data" class="oe_highlight"/>
+                </group>
+            </xpath>
+            <xpath expr="//field[@name='uom_id']" position="after">
+                <field name="available_in_kitchen"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_product_template_form_dietfacts" model="ir.ui.view">
+        <field name="name">product.template.form.dietfacts</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="open_recipe_suggestion"
+                        type="object"
+                        string="Suggest Recipes"
+                        class="btn-primary"
+                        icon="fa-list"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

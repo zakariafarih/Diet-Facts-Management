@@ -1,0 +1,1 @@
+"C:\Program Files\Odoo 17.0.20240930\python\python.exe" "C:\Program Files\Odoo 17.0.20240930\server\odoo-bin" -u diet_facts_management -d zakariaLLC

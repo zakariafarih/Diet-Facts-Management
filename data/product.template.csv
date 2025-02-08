@@ -1,0 +1,21 @@
+id,name,calories,categ_id/id,list_price
+product_paella,Paella,380,diet_facts_management.product_category_diet,8.99
+product_gazpacho,Gazpacho,70,diet_facts_management.product_category_diet,3.50
+product_tortilla_espanola,Tortilla Española,200,diet_facts_management.product_category_diet,6.49
+product_jamon_iberico,Jamón Ibérico,340,diet_facts_management.product_category_diet,25.00
+product_chorizo,Chorizo,455,diet_facts_management.product_category_all,4.99
+product_patatas_bravas,Patatas Bravas,210,diet_facts_management.product_category_diet,4.00
+product_ensaladilla_rusa,Ensaladilla Rusa,180,diet_facts_management.product_category_diet,3.50
+product_croquetas,Croquetas,280,diet_facts_management.product_category_diet,5.49
+product_salmorejo,Salmorejo,120,diet_facts_management.product_category_diet,3.00
+product_bocadillo_calamares,Bocadillo de Calamares,330,diet_facts_management.product_category_all,5.99
+product_empanada,Empanada,290,diet_facts_management.product_category_diet,4.50
+product_cocido_madrileno,Cocido Madrileño,330,diet_facts_management.product_category_diet,7.99
+product_fabada,Fabada,360,diet_facts_management.product_category_diet,8.50
+product_migas,Migas,350,diet_facts_management.product_category_diet,6.99
+product_pimientos_padron,Pimientos de Padrón,90,diet_facts_management.product_category_diet,3.20
+product_huevos_rotos,Huevos Rotos,310,diet_facts_management.product_category_diet,5.99
+product_bacalao_vizcaina,Bacalao a la Vizcaína,250,diet_facts_management.product_category_diet,9.50
+product_callos,Callos,230,diet_facts_management.product_category_diet,7.20
+product_arroz_negro,Arroz Negro,340,diet_facts_management.product_category_diet,8.00
+product_pescado_frito,Pescado Frito,270,diet_facts_management.product_category_diet,6.50

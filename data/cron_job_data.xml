@@ -1,0 +1,13 @@
+<odoo>
+    <record id="ir_cron_gamification_award_badges" model="ir.cron">
+        <field name="name">Gamification: Award Badges</field>
+        <field name="model_id" ref="model_gamification_tools"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_award_badges()</field>
+        <field name="active">True</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+    </record>
+</odoo>

@@ -1,0 +1,153 @@
+<odoo>
+    <!-- Single meal referencing all 20 products -->
+    <record id="meal_template_grand_buffet" model="meal.template">
+        <field name="name">Grand Buffet (All 20 Dishes)</field>
+        <field name="meal_type">dinner</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2026-01-01</field>
+        <field name="notes">A single meal with all 20 Spanish dishes from the dataset.</field>
+    </record>
+
+    <record id="meal_item_buffet_1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_paella"/>
+        <field name="servings">1</field>
+        <field name="notes">Paella</field>
+    </record>
+    <record id="meal_item_buffet_2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="servings">1</field>
+        <field name="notes">Gazpacho</field>
+    </record>
+    <record id="meal_item_buffet_3" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="servings">1</field>
+        <field name="notes">Tortilla Española</field>
+    </record>
+    <record id="meal_item_buffet_4" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="servings">1</field>
+        <field name="notes">Jamón Ibérico</field>
+    </record>
+    <record id="meal_item_buffet_5" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_chorizo"/>
+        <field name="servings">1</field>
+        <field name="notes">Chorizo</field>
+    </record>
+    <record id="meal_item_buffet_6" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="servings">1</field>
+        <field name="notes">Patatas Bravas</field>
+    </record>
+    <record id="meal_item_buffet_7" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="servings">1</field>
+        <field name="notes">Ensaladilla Rusa</field>
+    </record>
+    <record id="meal_item_buffet_8" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="servings">1</field>
+        <field name="notes">Croquetas</field>
+    </record>
+    <record id="meal_item_buffet_9" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="servings">1</field>
+        <field name="notes">Salmorejo</field>
+    </record>
+    <record id="meal_item_buffet_10" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="servings">1</field>
+        <field name="notes">Bocadillo de Calamares</field>
+    </record>
+    <record id="meal_item_buffet_11" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_empanada"/>
+        <field name="servings">1</field>
+        <field name="notes">Empanada</field>
+    </record>
+    <record id="meal_item_buffet_12" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_cocido_madrileno"/>
+        <field name="servings">1</field>
+        <field name="notes">Cocido Madrileño</field>
+    </record>
+    <record id="meal_item_buffet_13" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_fabada"/>
+        <field name="servings">1</field>
+        <field name="notes">Fabada</field>
+    </record>
+    <record id="meal_item_buffet_14" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_migas"/>
+        <field name="servings">1</field>
+        <field name="notes">Migas</field>
+    </record>
+    <record id="meal_item_buffet_15" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="servings">1</field>
+        <field name="notes">Pimientos de Padrón</field>
+    </record>
+    <record id="meal_item_buffet_16" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_huevos_rotos"/>
+        <field name="servings">1</field>
+        <field name="notes">Huevos Rotos</field>
+    </record>
+    <record id="meal_item_buffet_17" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_bacalao_vizcaina"/>
+        <field name="servings">1</field>
+        <field name="notes">Bacalao a la Vizcaína</field>
+    </record>
+    <record id="meal_item_buffet_18" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_callos"/>
+        <field name="servings">1</field>
+        <field name="notes">Callos</field>
+    </record>
+    <record id="meal_item_buffet_19" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="servings">1</field>
+        <field name="notes">Arroz Negro</field>
+    </record>
+    <record id="meal_item_buffet_20" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_grand_buffet"/>
+        <field name="item_id" ref="diet_facts_management.product_pescado_frito"/>
+        <field name="servings">1</field>
+        <field name="notes">Pescado Frito</field>
+    </record>
+
+    <!-- Additional smaller meals if desired -->
+    <record id="meal_template_breakfast_small" model="meal.template">
+        <field name="name">Small Breakfast</field>
+        <field name="meal_type">breakfast</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2026-01-02</field>
+        <field name="notes">Just 2 items for a quick breakfast.</field>
+    </record>
+    <record id="meal_item_breakfast_small_1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_small"/>
+        <field name="item_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="servings">1</field>
+        <field name="notes">Gazpacho</field>
+    </record>
+    <record id="meal_item_breakfast_small_2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_small"/>
+        <field name="item_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="servings">1</field>
+        <field name="notes">Tortilla Española</field>
+    </record>
+
+</odoo>

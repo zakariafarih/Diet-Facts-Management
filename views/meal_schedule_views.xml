@@ -1,0 +1,69 @@
+<odoo>
+    <record id="view_meal_schedule_tree" model="ir.ui.view">
+        <field name="name">meal.schedule.tree</field>
+        <field name="model">meal.schedule</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="user_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_meal_schedule_form" model="ir.ui.view">
+        <field name="name">meal.schedule.form</field>
+        <field name="model">meal.schedule</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="user_id"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <group>
+                        <field name="meal_ids" context="{'default_user_id': user_id}">
+                            <tree>
+                                <field name="name"/>
+                                <field name="meal_type"/>
+                                <field name="meal_date"/>
+                                <field name="totalcalories"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <field name="name"/>
+                                    <field name="meal_type"/>
+                                    <field name="meal_date"/>
+                                    <field name="totalcalories" readonly="1"/>
+                                </group>
+                            </form>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_meal_schedule_calendar" model="ir.ui.view">
+        <field name="name">meal.schedule.calendar</field>
+        <field name="model">meal.schedule</field>
+        <field name="arch" type="xml">
+            <calendar string="Meal Schedule"
+                      date_start="start_date"
+                      date_stop="end_date"
+                      color="user_id">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="action_meal_schedule" model="ir.actions.act_window">
+        <field name="name">Meal Schedules</field>
+        <field name="res_model">meal.schedule</field>
+        <field name="view_mode">calendar,tree,form</field>
+        <field name="view_id" ref="view_meal_schedule_calendar"/>
+    </record>
+</odoo>

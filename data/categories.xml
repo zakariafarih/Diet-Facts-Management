@@ -1,0 +1,8 @@
+<odoo>
+    <record id="product_category_diet" model="product.category">
+        <field name="name">Diet Items</field>
+    </record>
+    <record id="product_category_all" model="product.category">
+        <field name="name">All</field>
+    </record>
+</odoo>

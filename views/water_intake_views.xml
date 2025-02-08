@@ -1,0 +1,37 @@
+<odoo>
+    <record id="view_water_intake_tree" model="ir.ui.view">
+        <field name="name">water.intake.tree</field>
+        <field name="model">water.intake</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="user_id"/>
+                <field name="date"/>
+                <field name="intake_ml"/>
+                <field name="total_intake_ml" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_water_intake_form" model="ir.ui.view">
+        <field name="name">water.intake.form</field>
+        <field name="model">water.intake</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="date"/>
+                        <field name="intake_ml"/>
+                        <field name="total_intake_ml" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_water_intake" model="ir.actions.act_window">
+        <field name="name">Water Intake</field>
+        <field name="res_model">water.intake</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

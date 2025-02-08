@@ -1,0 +1,127 @@
+<odoo>
+    <!-- 1st Breakfast -->
+    <record id="meal_template_breakfast_1" model="meal.template">
+        <field name="name">Breakfast Set 1</field>
+        <field name="meal_type">breakfast</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-15</field>
+        <field name="notes">Healthy breakfast with Gazpacho and Tortilla.</field>
+    </record>
+    <record id="meal_item_template_breakfast_1_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_1"/>
+        <field name="item_id" ref="diet_facts_management.product_gazpacho"/>
+        <field name="servings">2</field>
+        <field name="notes">Double portion of chilled soup.</field>
+    </record>
+    <record id="meal_item_template_breakfast_1_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_1"/>
+        <field name="item_id" ref="diet_facts_management.product_tortilla_espanola"/>
+        <field name="servings">1</field>
+        <field name="notes">Single slice of tortilla.</field>
+    </record>
+
+    <!-- 2nd Breakfast -->
+    <record id="meal_template_breakfast_2" model="meal.template">
+        <field name="name">Breakfast Set 2</field>
+        <field name="meal_type">breakfast</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-16</field>
+        <field name="notes">Another breakfast with Jamón and Salmorejo.</field>
+    </record>
+    <record id="meal_item_template_breakfast_2_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_2"/>
+        <field name="item_id" ref="diet_facts_management.product_jamon_iberico"/>
+        <field name="servings">1</field>
+        <field name="notes">Premium Jamón Ibérico.</field>
+    </record>
+    <record id="meal_item_template_breakfast_2_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_breakfast_2"/>
+        <field name="item_id" ref="diet_facts_management.product_salmorejo"/>
+        <field name="servings">1</field>
+        <field name="notes">Cup of creamy Salmorejo.</field>
+    </record>
+
+    <!-- 1st Lunch -->
+    <record id="meal_template_lunch_1" model="meal.template">
+        <field name="name">Lunch Set 1</field>
+        <field name="meal_type">lunch</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-17</field>
+        <field name="notes">A hearty lunch with Paella and Patatas Bravas.</field>
+    </record>
+    <record id="meal_item_template_lunch_1_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_lunch_1"/>
+        <field name="item_id" ref="diet_facts_management.product_paella"/>
+        <field name="servings">2</field>
+        <field name="notes">Double portion (2 servings).</field>
+    </record>
+    <record id="meal_item_template_lunch_1_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_lunch_1"/>
+        <field name="item_id" ref="diet_facts_management.product_patatas_bravas"/>
+        <field name="servings">1</field>
+        <field name="notes">One plate of bravas.</field>
+    </record>
+
+    <!-- 2nd Lunch -->
+    <record id="meal_template_lunch_2" model="meal.template">
+        <field name="name">Lunch Set 2</field>
+        <field name="meal_type">lunch</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-18</field>
+        <field name="notes">Featuring Arroz Negro and Croquetas.</field>
+    </record>
+    <record id="meal_item_template_lunch_2_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_lunch_2"/>
+        <field name="item_id" ref="diet_facts_management.product_arroz_negro"/>
+        <field name="servings">2</field>
+        <field name="notes">Sharing portion for two.</field>
+    </record>
+    <record id="meal_item_template_lunch_2_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_lunch_2"/>
+        <field name="item_id" ref="diet_facts_management.product_croquetas"/>
+        <field name="servings">1</field>
+        <field name="notes">Six croquetas.</field>
+    </record>
+
+    <!-- 1st Dinner -->
+    <record id="meal_template_dinner_1" model="meal.template">
+        <field name="name">Dinner Set 1</field>
+        <field name="meal_type">dinner</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-19</field>
+        <field name="notes">Bocadillo de Calamares + Ensaladilla Rusa</field>
+    </record>
+    <record id="meal_item_template_dinner_1_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_dinner_1"/>
+        <field name="item_id" ref="diet_facts_management.product_bocadillo_calamares"/>
+        <field name="servings">1</field>
+        <field name="notes">One bocadillo</field>
+    </record>
+    <record id="meal_item_template_dinner_1_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_dinner_1"/>
+        <field name="item_id" ref="diet_facts_management.product_ensaladilla_rusa"/>
+        <field name="servings">1</field>
+        <field name="notes">One small portion</field>
+    </record>
+
+    <!-- 2nd Dinner -->
+    <record id="meal_template_dinner_2" model="meal.template">
+        <field name="name">Dinner Set 2</field>
+        <field name="meal_type">dinner</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="meal_date">2025-06-20</field>
+        <field name="notes">Migas + Pimientos de Padrón</field>
+    </record>
+    <record id="meal_item_template_dinner_2_item1" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_dinner_2"/>
+        <field name="item_id" ref="diet_facts_management.product_migas"/>
+        <field name="servings">2</field>
+        <field name="notes">Two servings of migas</field>
+    </record>
+    <record id="meal_item_template_dinner_2_item2" model="mealitem.template">
+        <field name="meal_id" ref="meal_template_dinner_2"/>
+        <field name="item_id" ref="diet_facts_management.product_pimientos_padron"/>
+        <field name="servings">1</field>
+        <field name="notes">One small bowl</field>
+    </record>
+</odoo>

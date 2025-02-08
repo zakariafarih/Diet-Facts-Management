@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Search View for Meals -->
+    <record id="view_meal_search" model="ir.ui.view">
+        <field name="name">meal.template.search</field>
+        <field name="model">meal.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="meal_type"/>
+                <field name="user_id"/>
+                <field name="meal_date"/>
+                <filter name="filter_largemeal"
+                        string="Large Meals"
+                        domain="[('largemeal','=',True)]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Search View for product.template -->
+    <record id="view_product_template_search_diet" model="ir.ui.view">
+        <field name="name">product.template.search.diet</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="calories"/>
+                <field name="servingsize"/>
+                <filter name="filter_high_calorie"
+                        string="High Calorie"
+                        domain="[('calories','>',400)]"/>
+                <filter name="filter_incomplete_nutrition"
+                        string="Incomplete Nutrition"
+                        domain="[('is_nutrition_incomplete','=',True)]"/>
+            </search>
+        </field>
+    </record>
+</odoo>

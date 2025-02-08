@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_nutrition_facts" model="ir.actions.report">
+        <field name="name">Nutrition Facts Report</field>
+        <field name="model">product.template</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">diet_facts_management.report_nutrition_facts</field>
+        <field name="report_file">diet_facts_management.report_nutrition_facts</field>
+        <field name="print_report_name">'Nutrition Facts - %s' % object.name</field>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_nutrition_facts">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <h2 class="text-center mb-4">Nutrition Facts</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center mb-4">
+                                    <span t-field="o.name"/>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Serving Information</h5>
+                                        <p class="card-text">
+                                            <strong>Serving Size:</strong> <span t-field="o.servingsize"/> g<br/>
+                                            <strong>Calories:</strong> <span t-field="o.calories"/> kcal
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Nutrient</th>
+                                            <th class="text-end">Amount</th>
+                                            <th>Unit</th>
+                                            <th class="text-end">% Daily Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="o.nutrition_ids" t-as="fact">
+                                            <tr>
+                                                <td><span t-field="fact.nutrient_id.name"/></td>
+                                                <td class="text-end"><span t-field="fact.value"/></td>
+                                                <td><span t-field="fact.uom"/></td>
+                                                <td class="text-end"><span t-field="fact.dailypercent"/>%</td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <small class="text-muted">
+                                    * Percent Daily Values are based on a 2,000 calorie diet.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
